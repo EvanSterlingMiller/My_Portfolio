@@ -63,7 +63,7 @@ p {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
-    background-image: url("./Professional_Photo.jpg"), url("./Awesome_Rowan.jpg");
+    background-image:url("./Awesome_Rowan.jpg"), url("./Professional_Photo.jpg");
     background-repeat: no-repeat;
     background-size: auto;
     background-position: left,right;
@@ -92,7 +92,9 @@ p {
     border: 5px #697475;
 }
 
-
+.content li {
+    color: #354855;
+}
 
 
 .about_me {
