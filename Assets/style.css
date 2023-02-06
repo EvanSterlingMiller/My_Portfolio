@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background-color: #354855;
+}
+
+.header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #354855;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position:sticky;
+    background-size: cover;
+}
+
+.header h1 {
+    display: inline-block;
+    font-size: 48px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+
+.header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    display:flex;
+    align-items:right;
+    font-size: 20px;
+}
+
+.header nav ul {
+    list-style-type: none;
+}
+
+.header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px
+}
+
+/* Main picture section */
+.hero {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("./Professional_Photo.jpg"), url("./Awesome_Rowan.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: left,right;
+    
+}
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+.content {
+    width: 100%;
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    justify-content: center;
+    border: 5px #697475;
+}
+
+
+
+
+.about_me {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 250px;
+    background-color: #0e48b3;
+    color: #ffffff;
+    text-align: center;
+    padding: 2%;
+    width:500px;
+    margin: 10px;
+ 
+    
+}
+.about_me:hover{
+    opacity: 80%;
+    box-shadow: inset 0px 0px 8px rgb(175, 28, 138);
+}
+
+.work {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 250px;
+    background-color: #0e48b3;;
+    color: #ffffff;
+    text-align: center;
+    padding: 2%;
+    margin: 10px;
+    width:500px;
+    
+}
+.work:hover{
+    opacity: 80%;
+    box-shadow: inset 0px 0px 8px rgb(175, 28, 138);
+}
+
+.contact_me {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 250px;
+    background-color: #0e48b3;;
+    color: #ffffff;
+    text-align: center;
+    padding: 2%;
+    width:500px;
+    margin: 10px;
+   
+}
+.contact_me:hover {
+    opacity: 80%;
+    box-shadow: inset 0px 0px 8px rgb(175, 28, 138);
+}
+
+
+
+.about_me h1 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.work h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.contact_me h3 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.footer h2 {
+    font-size: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    /* on tablets, set columns to only be 50% of the width and not grow */
+    .content {
+      flex: 50%;
+      
+    }
+  
+    /* select the last child to grow to full width if it has space to grow */
+    .content:last-child {
+      flex-grow: 1;
+    }
+  }
+  
+  /* media query for larger screens */
+  @media screen and (min-width: 992px) {
+    header {
+      width: 100%;
+    }
+  
+    .content {
+      flex: 25%;
+      
+    }
+  }
